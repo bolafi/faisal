@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -6,16 +7,22 @@
   <title>فيصل الهاجري | Portfolio</title>
   <meta
     name="description"
-    content="موقع بورتفوليو شخصي لشخصية قطرية وهمية يعرض نبذة، وسائل التواصل، الإنجازات، ومقابلات الفيديو."
+    content="موقع بورتفوليو شخصي لشخصية قطرية يعرض نبذة، تخصصات، إنجازات، مقابلات فيديو، ووسائل التواصل."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
-      <div class="brand">فيصل الهاجري</div>
+      <a href="#top" class="brand" aria-label="الذهاب إلى أعلى الصفحة">فيصل الهاجري</a>
 
-      <nav id="mainNav" class="nav-links desktop-nav" aria-label="التنقل الرئيسي">
+      <nav id="mainNav" class="nav-links" aria-label="التنقل الرئيسي">
         <a href="#about">التعريف</a>
         <a href="#expertise">التخصصات</a>
         <a href="#achievements">الإنجازات</a>
@@ -24,23 +31,37 @@
       </nav>
 
       <div class="nav-actions">
-        <button id="themeToggle" class="theme-toggle" type="button" aria-label="تبديل الوضع">
-          <span class="toggle-track">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="تبديل الوضع الداكن والفاتح"
+          aria-pressed="false"
+        >
+          <span class="toggle-track" aria-hidden="true">
             <span class="toggle-sun">☀️</span>
             <span class="toggle-thumb"></span>
             <span class="toggle-moon">🌙</span>
           </span>
         </button>
-        <button id="menuToggle" class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mainNav">
+
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          type="button"
+          aria-label="فتح القائمة"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <path d="M4 7h16M4 12h16M4 17h16"/>
+            <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -48,8 +69,9 @@
           <h1 class="main-name">فيصل الهاجري</h1>
           <p>
             إعلامي وصانع مبادرات شبابية من قطر، مهتم ببناء مشاريع ذات أثر مجتمعي،
-            وتقديم محتوى بصري يربط بين الهوية المحلية، الإبداع، وفرص التطوير للشباب.
+            وتقديم محتوى بصري يربط بين الهوية المحلية والإبداع وفرص التطوير للشباب.
           </p>
+
           <div class="cta-row">
             <a class="btn btn-primary" href="#videos">شاهد المقابلات</a>
             <a class="btn btn-secondary" href="#contact">وسائل التواصل</a>
@@ -57,7 +79,8 @@
         </div>
 
         <div class="hero-media">
-          <article class="profile-card hero-image-card" aria-label="صورة شخصية">
+          <article class="hero-image-card hero-variant hero-variant-glass" aria-label="صورة شخصية">
+            <span class="hero-variant-art" aria-hidden="true"></span>
             <img
               class="hero-image"
               src="assets/faisal-sel.png"
@@ -76,6 +99,7 @@
             <p>ملخص سريع يعطي الزائر فكرة أوضح عن الشخصية والاهتمامات قبل الانتقال لباقي الأقسام.</p>
           </div>
         </div>
+
         <aside class="profile-card" aria-label="معلومات سريعة">
           <div class="meta-list">
             <div>📍 الدوحة، قطر</div>
@@ -83,6 +107,7 @@
             <div>🎯 يهتم بالهوية، الإبداع، والتأثير المجتمعي</div>
             <div>🌐 متاح للتعاون في المشاريع والمقابلات</div>
           </div>
+
           <div class="pill-row">
             <span class="pill">إعلام</span>
             <span class="pill">مبادرات</span>
@@ -98,18 +123,19 @@
         <div class="section-head">
           <div>
             <h2>تعريف بسيط</h2>
-            <p>هذه شخصية وهمية صُممت كنموذج لبورتفوليو شخصي حديث باللغة العربية.</p>
+            <p>نموذج بصياغة حديثة لموقع شخصي عربي بطابع بصري هادئ واحترافي.</p>
           </div>
         </div>
+
         <div class="grid grid-2">
           <article class="card">
             <h3>من هو فيصل؟</h3>
             <p>
               فيصل الهاجري شخصية قطرية شابة بدأت رحلتها من العمل التطوعي والمبادرات الإعلامية،
-              ثم توسعت لتقديم محتوى ومشاركات في اللقاءات العامة حول دور الشباب، الهوية المحلية،
-              وصناعة الأثر عبر الإعلام الحديث.
+              ثم توسعت لتقديم محتوى ومشاركات في اللقاءات العامة حول دور الشباب والهوية المحلية وصناعة الأثر.
             </p>
           </article>
+
           <article class="card">
             <h3>الرسالة</h3>
             <p>
@@ -126,18 +152,21 @@
         <div class="section-head">
           <div>
             <h2>التخصصات</h2>
-            <p>أضفت هذا القسم لأنه مهم في أي portfolio حتى يفهم الزائر بسرعة ما الذي يقدمه صاحب الموقع.</p>
+            <p>هذا القسم مهم حتى يفهم الزائر بسرعة ما الذي يقدمه صاحب الموقع.</p>
           </div>
         </div>
+
         <div class="grid grid-3">
           <article class="card">
             <h3>التحدث الإعلامي</h3>
-            <p>المشاركة في البرامج، اللقاءات، والحوارات المتعلقة بالشباب، الهوية، والمبادرات المجتمعية.</p>
+            <p>المشاركة في البرامج والحوارات المتعلقة بالشباب والهوية والمبادرات المجتمعية.</p>
           </article>
+
           <article class="card">
             <h3>إدارة المبادرات</h3>
             <p>تصميم مبادرات شبابية وربطها بفرص تعليمية وإعلامية تخلق أثرًا حقيقيًا ومستدامًا.</p>
           </article>
+
           <article class="card">
             <h3>السرد البصري</h3>
             <p>تحويل الأفكار إلى قصص مرئية قابلة للنشر عبر المنصات الرقمية والفعاليات العامة.</p>
@@ -151,29 +180,32 @@
         <div class="section-head">
           <div>
             <h2>الإنجازات</h2>
-            <p>يمكنك لاحقًا استبدال هذه الإنجازات الوهمية بإنجازات حقيقية أو جوائز أو مشاركات.</p>
+            <p>يمكنك لاحقًا استبدال هذه الأمثلة الوهمية بإنجازات أو مشاركات حقيقية.</p>
           </div>
         </div>
+
         <div class="achievement-list">
           <article class="achievement-item">
             <div class="achievement-year">2025</div>
             <div>
               <h3>إطلاق مبادرة شبابية للتعبير الإعلامي</h3>
-              <p>أطلق مبادرة تهدف إلى تدريب الشباب على مهارات الظهور الإعلامي وصناعة الرسائل المؤثرة عبر الفيديو القصير.</p>
+              <p>مبادرة تهدف إلى تدريب الشباب على مهارات الظهور الإعلامي وصناعة الرسائل المؤثرة عبر الفيديو القصير.</p>
             </div>
           </article>
+
           <article class="achievement-item">
             <div class="achievement-year">2024</div>
             <div>
               <h3>تكريم في ملتقى المبادرات المجتمعية</h3>
-              <p>تم تكريمه تقديرًا لمساهماته في تمكين الشباب عبر مشاريع تطوعية تجمع بين الإبداع والخدمة العامة.</p>
+              <p>تكريم تقديرًا للمساهمة في تمكين الشباب عبر مشاريع تطوعية تجمع بين الإبداع والخدمة العامة.</p>
             </div>
           </article>
+
           <article class="achievement-item">
             <div class="achievement-year">2023</div>
             <div>
               <h3>مشاركة في حملات توعوية رقمية</h3>
-              <p>قاد حملات توعوية على المنصات الاجتماعية ركزت على الهوية المحلية، المسؤولية الرقمية، وتحفيز المبادرة الفردية.</p>
+              <p>قيادة حملات ركزت على الهوية المحلية والمسؤولية الرقمية وتحفيز المبادرة الفردية.</p>
             </div>
           </article>
         </div>
@@ -185,20 +217,32 @@
         <div class="section-head">
           <div>
             <h2>مقابلات فيديو</h2>
-            <p>استخدمت مقاطع يوتيوب كمحتوى تجريبي. تستطيع استبدالها لاحقًا بروابط مقابلات حقيقية.</p>
+            <p>مقاطع تجريبية قابلة للاستبدال لاحقًا بروابط مقابلات أو لقاءات حقيقية.</p>
           </div>
         </div>
+
         <div class="videos">
           <article class="card video-card">
             <h3>لقاء حول الإبداع والمجتمع</h3>
             <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="YouTube video player 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/ysz5S6PUM-U"
+                title="لقاء حول الإبداع والمجتمع"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
           </article>
+
           <article class="card video-card">
             <h3>حوار عن دور الشباب في صناعة الأثر</h3>
             <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/jNQXAC9IVRw"
+                title="حوار عن دور الشباب في صناعة الأثر"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
           </article>
         </div>
@@ -210,36 +254,49 @@
         <div class="section-head">
           <div>
             <h2>وسائل التواصل</h2>
-            <p>روابط تجريبية يمكنك تبديلها بسهولة داخل ملف HTML.</p>
+            <p>روابط تجريبية يمكنك تعديلها مباشرة بحسب الحسابات الحقيقية.</p>
           </div>
         </div>
-        <div class="socials" dir="ltr">
+
+        <div class="socials">
           <a class="social-link" href="https://instagram.com" target="_blank" rel="noreferrer">
             <span class="social-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.25 1.65a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2Z"/></svg>
             </span>
-            <span>@faisal.alhajri</span>
+            <span class="social-text">
+              <strong>Instagram</strong>
+              <small>@faisal.alhajri</small>
+            </span>
           </a>
 
           <a class="social-link" href="https://x.com" target="_blank" rel="noreferrer">
             <span class="social-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.26l-4.9-6.4L6.44 22H3.33l7.24-8.27L.8 2h6.36l4.43 5.85L18.9 2Z"/></svg>
             </span>
-            <span>@faisal.alhajri</span>
+            <span class="social-text">
+              <strong>X</strong>
+              <small>@faisal.alhajri</small>
+            </span>
           </a>
 
           <a class="social-link" href="https://linkedin.com" target="_blank" rel="noreferrer">
             <span class="social-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.97 1.97 0 1 0 5.3 6.94 1.97 1.97 0 0 0 5.25 3ZM20 13.02C20 9.54 18.14 7.9 15.66 7.9c-2 0-2.9 1.1-3.4 1.87V8.5H8.88c.04.84 0 11.5 0 11.5h3.38v-6.42c0-.34.03-.68.13-.92.27-.68.88-1.39 1.9-1.39 1.34 0 1.88 1.02 1.88 2.51V20H20v-6.98Z"/></svg>
             </span>
-            <span>Faisal Alhajri</span>
+            <span class="social-text">
+              <strong>LinkedIn</strong>
+              <small>Faisal Alhajri</small>
+            </span>
           </a>
 
           <a class="social-link" href="mailto:faisal@example.com">
             <span class="social-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.2l9 6.3 9-6.3V7H3Zm18 10V9.65l-8.43 5.9a1 1 0 0 1-1.14 0L3 9.65V17h18Z"/></svg>
             </span>
-            <span>faisal@example.com</span>
+            <span class="social-text">
+              <strong>Email</strong>
+              <small>faisal@example.com</small>
+            </span>
           </a>
         </div>
       </div>
@@ -252,8 +309,9 @@
     </div>
   </footer>
 
-  <button id="backTop" class="back-top" type="button" aria-label="العودة للأعلى">↑</button>
+  <button id="backTop" class="back-top" type="button" aria-label="العودة إلى الأعلى">↑</button>
 
   <script src="script.js"></script>
 </body>
 </html>
+
