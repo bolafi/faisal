@@ -131,7 +131,64 @@ body.light .topbar {
 	gap: 10px;
 }
 
-.theme-toggle,
+.theme-toggle {
+	border: none;
+	background: none;
+	padding: 0;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.toggle-track {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 28px;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid var(--card-border);
+	box-shadow: var(--shadow);
+	transition: background 0.3s;
+}
+
+body.light .toggle-track {
+	background: rgba(0, 0, 0, 0.07);
+}
+
+.toggle-thumb {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: var(--accent);
+	top: 2px;
+	right: 2px;
+	transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+body.light .toggle-thumb {
+	right: 34px;
+}
+
+.toggle-sun,
+.toggle-moon {
+	position: absolute;
+	font-size: 13px;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+	user-select: none;
+	line-height: 1;
+}
+
+.toggle-sun {
+	left: 5px;
+}
+.toggle-moon {
+	right: 5px;
+}
+
 .menu-toggle {
 	border: 1px solid var(--card-border);
 	background: rgba(255, 255, 255, 0.06);
@@ -143,7 +200,6 @@ body.light .topbar {
 	box-shadow: var(--shadow);
 }
 
-body.light .theme-toggle,
 body.light .menu-toggle {
 	background: rgba(255, 255, 255, 0.82);
 }
@@ -273,10 +329,13 @@ body.light .social-link {
 }
 
 .hero-image {
-	aspect-ratio: 4 / 5;
+	/* aspect-ratio: 4 / 5; */
 	width: 100%;
 	object-fit: cover;
 	display: block;
+	box-shadow:
+		0 8px 32px rgba(0, 0, 0, 0.35),
+		0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .meta-list {
@@ -376,6 +435,7 @@ body.light .pill {
 	box-shadow: var(--shadow);
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 12px;
 }
 
