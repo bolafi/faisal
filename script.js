@@ -2,9 +2,14 @@ const themeToggle = document.getElementById("themeToggle");
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 const backTop = document.getElementById("backTop");
+const currentYear = document.getElementById("currentYear");
 
 const mobileBreakpoint = 760;
 const savedTheme = localStorage.getItem("theme");
+
+if (currentYear) {
+	currentYear.textContent = String(new Date().getFullYear());
+}
 
 if (savedTheme === "light") {
 	document.body.classList.add("light");
